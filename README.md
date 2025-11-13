@@ -45,6 +45,19 @@ Click Create Function.
 
 <img width="1918" height="890" alt="image" src="https://github.com/user-attachments/assets/9bb204e0-1b85-4e46-ad13-c5d52bd00347" />
 
+## 5. Test the Function
+
+In the Lambda console, click Test.
+Choose “Create a new test event” → leave the default JSON (no input required).
+Click Test to manually trigger.
+Check the Execution results and CloudWatch logs to confirm instance IDs are printed.
+
+<img width="1918" height="818" alt="image" src="https://github.com/user-attachments/assets/1e73de79-521c-48b1-b9f0-a2fb66b4a728" />
+
+<img width="1918" height="688" alt="image" src="https://github.com/user-attachments/assets/f53c3904-bcd3-45dc-aecb-6dd76d5b0c7f" />
+
+
+
 
 
 
