@@ -43,7 +43,10 @@ Runtime: Python 3.x (e.g., Python 3.12)
 Execution Role: Use existing role → DJ-LambdaEC2AutomationRole
 Click Create Function.
 
+Add below code snipping in code section of your lambda function
+https://github.com/deeps19nija-collab/ServerlessArtitectureAndCloudAutomation/blob/main/AutomateStartStopInstances.py
 <img width="1918" height="890" alt="image" src="https://github.com/user-attachments/assets/9bb204e0-1b85-4e46-ad13-c5d52bd00347" />
+
 
 ## 5. Test the Function
 
