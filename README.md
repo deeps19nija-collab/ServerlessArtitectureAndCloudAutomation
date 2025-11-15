@@ -83,6 +83,7 @@ Attach the following policy:
 AmazonS3FullAccess
 Name it
 Create the role.
+<img width="1918" height="862" alt="image" src="https://github.com/user-attachments/assets/18ad1ee3-be68-4a43-936c-8a5a52b9be0c" />
 
 ## Step 3: Create AWS Lambda Function
 
@@ -93,6 +94,8 @@ Name: s3_cleanup_function
 Runtime: Python 3.12 (or any 3.x)
 Role: Use existing role → choose LambdaS3CleanupRole
 Click Create function
+<img width="1911" height="677" alt="image" src="https://github.com/user-attachments/assets/d0bafd4e-bc65-4808-ad3b-0ee42936877d" />
+
 
 ## Step 4: Add the Python Code
 
