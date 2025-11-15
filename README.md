@@ -59,6 +59,55 @@ Check the Execution results and CloudWatch logs to confirm instance IDs are prin
 
 <img width="1918" height="688" alt="image" src="https://github.com/user-attachments/assets/f53c3904-bcd3-45dc-aecb-6dd76d5b0c7f" />
 
+# Assignment 2: Automated S3 Bucket Cleanup Using AWS Lambda and Boto3
+
+## Step 1: S3 Bucket Setup
+
+Go to AWS Console → S3 → Create bucket
+Give it a unique name (e.g. my-lambda-cleanup-bucket)
+Leave defaults and click Create bucket
+<img width="1875" height="726" alt="image" src="https://github.com/user-attachments/assets/7fc2aa79-7e32-44ef-a5ea-1899a55b1d9c" />
+
+Upload multiple files
+Add test files (some “old” and some “new”)
+To simulate old files, you can:
+Use aws s3 cp with the --metadata option to fake last modified dates, or
+Just assume some files are old for testing, or
+Adjust system time temporarily and upload.
+
+## Step 2: Create IAM Role for Lambda
+
+Go to IAM → Roles → Create role
+Choose AWS Service → Lambda
+Attach the following policy:
+AmazonS3FullAccess
+Name it
+Create the role.
+
+## Step 3: Create AWS Lambda Function
+
+Go to Lambda → Create function
+Choose:
+Author from scratch
+Name: s3_cleanup_function
+Runtime: Python 3.12 (or any 3.x)
+Role: Use existing role → choose LambdaS3CleanupRole
+Click Create function
+
+## Step 4: Add the Python Code
+
+## Step 5: Test the Lambda Manually
+
+In the Lambda console, click Test → Configure test event
+Choose "Hello World" template (or empty JSON)
+Save it.
+Click Test
+Check CloudWatch Logs (link appears under "Monitor" tab):
+You’ll see which files were deleted and which were kept.
+Go back to the S3 console — confirm only newer files remain.
+
+
+
 
 
 
