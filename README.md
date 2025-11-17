@@ -71,9 +71,10 @@ Leave defaults and click Create bucket
 Upload multiple files
 Add test files (some “old” and some “new”)
 To simulate old files, you can:
-Use aws s3 cp with the --metadata option to fake last modified dates, or
-Just assume some files are old for testing, or
-Adjust system time temporarily and upload.
+Just assume some files are old for testing.
+
+<img width="1518" height="805" alt="image" src="https://github.com/user-attachments/assets/aff9ca11-aae8-40cb-b9aa-1d157413cac6" />
+
 
 ## Step 2: Create IAM Role for Lambda
 
@@ -97,7 +98,9 @@ Click Create function
 <img width="1911" height="677" alt="image" src="https://github.com/user-attachments/assets/d0bafd4e-bc65-4808-ad3b-0ee42936877d" />
 
 
-## Step 4: Add the Python Code
+## Step 4: Add the Python Code as below
+
+https://github.com/deeps19nija-collab/ServerlessArtitectureAndCloudAutomation/blob/main/autoS3cleanup.py
 
 ## Step 5: Test the Lambda Manually
 
@@ -108,6 +111,11 @@ Click Test
 Check CloudWatch Logs (link appears under "Monitor" tab):
 You’ll see which files were deleted and which were kept.
 Go back to the S3 console — confirm only newer files remain.
+<img width="1877" height="846" alt="image" src="https://github.com/user-attachments/assets/48b3c650-5430-497e-9d73-04f46455a14f" />
+
+<img width="1568" height="588" alt="image" src="https://github.com/user-attachments/assets/331cb050-88fa-4dfb-b730-5aef7400115c" />
+
+
 
 
 
