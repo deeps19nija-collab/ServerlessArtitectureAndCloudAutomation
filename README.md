@@ -115,6 +115,40 @@ Go back to the S3 console — confirm only newer files remain.
 
 <img width="1568" height="588" alt="image" src="https://github.com/user-attachments/assets/331cb050-88fa-4dfb-b730-5aef7400115c" />
 
+# Assignment 5: Auto-Tagging EC2 Instances on Launch Using AWS Lambda and Boto3
+
+## Step 1: EC2 Setup
+
+Create an EC2 instance without tag.
+<img width="1918" height="932" alt="image" src="https://github.com/user-attachments/assets/e1e23458-cd9e-4c31-bb94-97abb56b7d14" />
+
+## Step 2: Lambda IAM Role
+
+Go to IAM → Roles → Create role.
+
+Select Lambda as the trusted entity.
+
+Attach the following policy:
+
+AmazonEC2FullAccess
+
+Name the role.
+<img width="1917" height="820" alt="image" src="https://github.com/user-attachments/assets/bae0b0c0-00e1-4578-adb0-39189f1e4110" />
+
+# Step 3: Lambda Function
+
+Go to Lambda → Create function → Author from scratch.
+
+Runtime: Python 3.x
+
+Assign the IAM role created in Step 2.
+<img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/573d39f1-56ac-4da7-94b0-f2f02b0c7b1f" />
+
+Copy the following Python script into the Lambda function:
+https://github.com/deeps19nija-collab/ServerlessArtitectureAndCloudAutomation/blob/main/AutoTagEC2Instances.py
+
+
+
 
 
 
