@@ -144,8 +144,25 @@ Runtime: Python 3.x
 Assign the IAM role created in Step 2.
 <img width="1898" height="878" alt="image" src="https://github.com/user-attachments/assets/573d39f1-56ac-4da7-94b0-f2f02b0c7b1f" />
 
-Copy the following Python script into the Lambda function:
-https://github.com/deeps19nija-collab/ServerlessArtitectureAndCloudAutomation/blob/main/AutoTagEC2Instances.py
+Copy the following Python script into the Lambda function:  
+
+https://github.com/deeps19nija-collab/ServerlessArtitectureAndCloudAutomation/blob/main/AutoTagEC2Instances.py  
+
+## Step 4: Testing
+
+Launch a new EC2 instance in your account.
+
+Wait a minute for the Lambda to trigger.
+
+Check the instance tags:
+
+Go to EC2 → Instances → [Your Instance] → Tags
+
+You should see:
+<img width="1141" height="352" alt="image" src="https://github.com/user-attachments/assets/6da96d48-1b40-4143-9b3c-4ad609481a52" />
+
+<img width="1843" height="736" alt="image" src="https://github.com/user-attachments/assets/83b67514-d667-4495-85d8-3407a029e91a" />
+
 
 
 
